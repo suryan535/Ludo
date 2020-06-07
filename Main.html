@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>LUDO</title>
+    <link rel="stylesheet" href="Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="Container">
+        <canvas id="Ludo" width='600px' height='600px'></canvas>
+    </div>
+    <div class="scoreDisplay">
+        <div id="scoreP1"></div>
+        <div id="scoreP2"></div>
+    </div>
+    <div class="ButtonHolder">
+        <button id="random" onclick=roll()>ROLL</button>
+        <div>
+            <input type="text" id="displayRandom" disabled="disabled">
+            <input type="text" id="choiceRoll" placeholder="Roll Choice">
+        </div>
+
+        <button class="mover" id="move1A" onclick=move1A()>Move 1A</button>
+        <button class="mover" id="move1B" onclick=move1B()>Move 1B</button>
+        <button class="mover" id="move2A" onclick=move2A()>Move 2A</button>
+        <button class="mover" id="move2B" onclick=move2B()>Move 2B</button>
+    </div>
+
+
+    <script src="Main.js"></script>
+</body>
+
+</html>

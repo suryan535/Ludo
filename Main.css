@@ -1,0 +1,85 @@
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body{
+    background-image: url("./background.jpg");
+    background-size: cover;
+}
+.Container
+{
+    width:100%;
+    text-align:center;
+}
+.scoreDisplay
+{
+    padding:16px;
+    display: flex; 
+    justify-content: space-around;
+    font-size:1.2rem;
+    color:#8513a1;
+    font-weight: bold;
+}
+
+.ButtonHolder
+{
+    margin:auto;
+    justify-content: center;
+    padding:20px;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(200px);
+    grid-gap:20px;
+}
+.mover,#random
+{
+    border-radius:10px;
+    font-size:1.2rem;
+    color:#def2f1;
+    padding:20px;
+}
+.mover:hover,#random:hover{
+    transition: all 0.5s;
+   box-shadow: 0 3px 3px 3px rgba(0,0,0,0.4);
+   transform: translateY(-7px);
+}
+
+#move1A
+{
+    background-color: rgb(233, 38, 38);
+}
+#move1B
+{
+    background-color: rgb(230, 98, 98);
+}
+#move2A
+{
+    background-color: rgb(36, 33, 224);
+}
+#move2B
+{
+    background-color: rgb(106, 108, 216);
+}
+input
+{
+    margin-bottom: 5px;
+    background-color:#def2f1;
+    color:rgb(18, 139, 83);
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+#random
+{
+    background-color: #3aafa9;
+}
+
+@media screen and  (max-device-width:600px)
+{
+    .mover,#random,input,.scoreDisplay{
+        font-size:2rem;
+    }
+    .Container
+    {
+        margin-top:10%;
+    }
+}
